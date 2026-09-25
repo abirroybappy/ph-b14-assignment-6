@@ -28,7 +28,7 @@ A dark, responsive workout library built from the FitLog Figma brief. Browse exe
 
 ## Deployment
 
-The app is designed for Next.js hosting such as Vercel. Set no API secret; the public FitLog API is used directly.
+The app is designed for Next.js hosting such as Netlify. Set no API secret; the public FitLog API is used directly.
 
 ## Run locally
 ```bash
