@@ -1,0 +1,5 @@
+'use client';
+import { ClipboardDocumentListIcon, BookmarkIcon } from '@heroicons/react/24/outline';
+import { Workout } from '@/lib/types';
+import { useApp } from './AppProvider';
+export default function WorkoutActions({workout}:{workout:Workout}){const {addToPlan,saveForLater,plan}=useApp();return <div className="mt-8 grid gap-3 sm:grid-cols-2"><button disabled={plan.length>=5||plan.some(x=>x.id===workout.id)} onClick={()=>addToPlan(workout)} className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-4 py-3 text-[10px] font-black uppercase text-black disabled:cursor-not-allowed disabled:opacity-40"><ClipboardDocumentListIcon className="h-4 w-4"/>{plan.some(x=>x.id===workout.id)?'In Today’s Plan':'Add to today’s plan'}</button><button onClick={()=>saveForLater(workout)} className="inline-flex items-center justify-center gap-2 rounded-md border border-[#3a3e47] px-4 py-3 text-[10px] font-black uppercase hover:bg-[#1c1f25]"><BookmarkIcon className="h-4 w-4"/>Save for later</button></div>}
