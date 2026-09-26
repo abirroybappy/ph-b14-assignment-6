@@ -8,7 +8,7 @@ export default function Hero(){
       <div className="relative z-10 flex max-w-[650px] flex-col justify-center lg:min-h-[430px]">
         <p className="mb-4 text-[10px] font-black uppercase tracking-[.16em] text-[var(--accent)]">Workout Library</p>
         <h1 className="display max-w-[700px] text-4xl font-bold uppercase leading-[.94] sm:text-6xl lg:text-[64px]">Train with intent. Log every set.</h1>
-        <p className="mt-6 max-w-[570px] text-sm leading-6 text-[#aeb4bd] sm:text-base">FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today&apos;s plan, and watch the week &apos;s work add up.</p>
+        <p className="mt-6 max-w-[570px] text-sm leading-6 text-[#aeb4bd] sm:text-base">FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today&apos;s plan, and watch the week&apos;s work add up.</p>
         <Link href="#library" className="mt-7 inline-flex w-fit items-center gap-2 rounded-full bg-[var(--accent)] px-5 py-3.5 text-[12px] font-black uppercase tracking-wide text-black transition hover:brightness-95">
           <span className="text-base leading-none"></span> Browse Workouts <ArrowDownIcon className="h-4 w-4"/>
         </Link>
