@@ -1,6 +1,6 @@
 import { Workout } from './types';
 
-export const API_URL = 'https://api.abcz.workers.dev/api/fitlog';
+export const API_URL = 'https://api.api-store.workers.dev/api/fitlog';
 
 export async function getWorkouts(): Promise<Workout[]> {
   const res = await fetch(API_URL, { next: { revalidate: 60 } });
